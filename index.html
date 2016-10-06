@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Developer Files</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="lisension/css/bootstrap/css/bootstrap.min.css" />
+    <!-- Style pages -->
+    <link rel="stylesheet" href="lisension/css/style-page-lisension.css" />
+</head>
+<body>
+
+<div class="container">
+    <h1>Developer Files <i>(Разработчик файлов)</i> - программа для быстрого создания неограниченного количества различного типа файлов.</h1>
+    
+    <div>
+        
+        <h2>Данная программа ограничена:</h2>
+        <ol>
+            <li>Список разрешенных файлов ограничен. В него входят файлы  c расширением html, css, js, php.</li>
+            <li>Определенный синтаксис для работы. Для создания файла нужна определённая команда. Для указания параметров нужно указать атрибут.</li>
+            <li>Программа создаёт файлы определенного формата за раз.</li>
+        </ol>
+   
+        <h2>Данная программа позволяет:</h2>
+        <ol>
+            <li>Не определять все параметры.</li>
+            <li>Множественное создание файлов за раз.</li>
+            <li>Работать можно не запуская программу каждый раз при создании файла.  </li>
+        </ol>
+        
+    </div>
+    
+
+    <p>
+       Список команд: @html, @css, @js,@ php; 
+    </p>
+    
+    <p>
+       Список атрибутов: s=, f=;
+    </p>
+    
+    <div>
+        <h2>Синтаксис</h2>
+        <ul>
+            <li>
+                @css s=C://project/css/stylemain f=style-1,style-2<br />
+                В этом случае программа создаст два файла style-1.css и style-2.css по указанному пути C://project/css/stylemain.
+            </li>
+            <li>
+                @php f=index,main<br />
+                В этом случаии программа создаст в текущем каталоги исполнения программы два файла index.php и main.php
+            </li>
+            <li>
+                @html s=./pages<br />
+                В этом случае программа создаст каталог в текущем каталоги исполнения программы и в нём файл file.html
+            </li>
+            <li>
+                @js<br />
+                В этом случае программа создаст в текущем каталоги исполнения программы файл file.js
+            </li>
+        </ul>
+    </div>
+    
+    <div>
+        <h2>Атрибуты:</h2>
+        <ul>
+            <li>
+                s=[путь]. Позволяет указывать путь к файлом. Принимает два вида путей к файлом. Относительный (./) текущий каталог.
+                Абсолютный, указывает полный путь от корня корня файловой системы (локального диска) до его расположения.
+            
+                <p>С://pojects/pages/main/version/one - Абсолютный<br />
+                ./version/one - Относительный</p>
+                
+            </li>
+            <li>
+                f=[имя(имена)] Позволяет указывать имя(имена) файла(ов). Синтаксис
+                <p>f=index или f=index,main,stage и т.д.</p>
+                
+            </li>
+                
+                
+            
+        </ul>
+    </div>
+    <p>
+        Проект доступен в свободное пользование и его можно скачать с репозитория на <a href="https://github.com/3ADOB-3DEC/developer-files.git">GitHub: https://github.com/3ADOB-3DEC/developer-files.git</a>
+
+        <br />Идея проекта: Ядыкин Дмитрий
+        <br />Разработчик: Ядыкин Дмитрий
+    </p>
+
+</div>
+
+</body>
+</html>
